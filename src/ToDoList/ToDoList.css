@@ -1,0 +1,87 @@
+.todo-list {
+  width: auto;
+  text-align: center;
+}
+
+.add-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.add-item input {
+  width: 300px;
+  height: 35px;
+  font-size: 1.3rem;
+  outline: none;
+}
+
+.add-item button {
+  font-size: 1.2rem;
+}
+
+.add-item button,
+.add-item button:after,
+.remove-all,
+.remove-all:after {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background: #ff013c;
+  border: 0;
+  color: #fff;
+  letter-spacing: 2px;
+  position: relative;
+  user-select: none;
+}
+
+.remove-all,
+.remove-all:after {
+  height: 50px;
+  width: 20%;
+  font-size: 1.2rem;
+}
+
+
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+
+}
+
+.item .item-name-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.item .item-name-part input{
+    width: 15px;
+    height: 15px;
+}
+
+.item .edit-remove-part{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.item .edit-remove-part div{
+    cursor: pointer;
+    color: #ff013c;
+    font-size: 1.2rem;
+}
+
+
+.noItems{
+  text-align: center;
+  font-size: 1.5rem;
+}
